@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | </title>
+    <link>https://example.com/projects/</link>
+      <atom:link href="https://example.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 19 May 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://example.com/media/icon_hu_982c5d63a71b2961.png</url>
+      <title>Projects</title>
+      <link>https://example.com/projects/</link>
+    </image>
+    
+    <item>
+      <title>chatbot</title>
+      <link>https://example.com/projects/dealer-chatbot/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/projects/dealer-chatbot/</guid>
+      <description>&lt;p&gt;Dealer Bot Features
+4 Intelligent Agents:
+Intent Classifier (understand user intent)
+Anomaly Detection (security checks)
+RAG Agent (search documents)
+Response Synthesis (generate answers)
+Document Management: Upload your knowledge base
+Semantic Search: Find relevant information quickly
+Security: Malicious query detection
+How to use:
+Chat Tab: Ask questions about dealers, warranty, maintenance
+Upload Tab: Add new documents to knowledge base&lt;/p&gt;
+&lt;div style=&#34;position: relative; width: 100%; height: 0; padding-bottom: 56.25%;&#34;&gt;
+  &lt;iframe 
+    src=&#34;https://velagalasr-dealer-bot.hf.space?embed=true&#34; 
+    frameborder=&#34;0&#34; 
+    style=&#34;position: absolute; width: 100%; height: 100%; left: 0; top: 0;&#34;&gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>chatbot</title>
+      <link>https://example.com/projects/pandas/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/projects/pandas/</guid>
+      <description>&lt;p&gt;Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures.&lt;/p&gt;
+&lt;iframe
+	src=&#34;https://velagalasr-dealer-bot.hf.space&#34;
+	frameborder=&#34;0&#34;
+	width=&#34;850&#34;
+	height=&#34;450&#34;
+&gt;&lt;/iframe&gt;</description>
+    </item>
+    
+    <item>
+      <title>PyTorch</title>
+      <link>https://example.com/projects/pytorch/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/projects/pytorch/</guid>
+      <description>&lt;p&gt;PyTorch is a Python package that provides tensor computation (like NumPy) with strong GPU acceleration.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>scikit-learn</title>
+      <link>https://example.com/projects/scikit/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/projects/scikit/</guid>
+      <description>&lt;p&gt;scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
