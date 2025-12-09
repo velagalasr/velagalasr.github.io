@@ -1,14 +1,10 @@
 ---
-title: 'Experience'
-date: 2023-10-24
-type: landing
-draft: true
-
-
-
-# Note: `username` refers to the user's folder name in `content/authors/`
-
-# Page sections
-
+title: ""
+date: ""
+draft: false
+page_header: false
+show_title: false
+show_date: false
+show_reading_time: false
 ---
 <img src="/images/present_position.png" alt="Present Position"  width="150%"  align="center" style="max-width:1400px; align=top display:block; margin:auto;">

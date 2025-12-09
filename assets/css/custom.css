@@ -1,0 +1,18 @@
+.meta-reading-time,
+.reading-time,
+.hb-reading-time,
+.author-section,
+.footer-icons,
+.social-icons {
+  display: none !important;
+}
+
+.wb-page-meta, .wb-footer, .wb-social {
+  display: none !important;
+}
+
+/* Extra defensive rule: hide any element whose class name contains "reading" */
+[class*="reading"] {
+  display: none !important;
+}
+
