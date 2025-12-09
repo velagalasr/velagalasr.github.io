@@ -1,0 +1,41 @@
+{{- /* Remove reading time and orphaned bullets when disabled */ -}}
+{{- if not (default true site.Params.hugoblox.content.reading_time.enable) -}}
+<script>
+  (function() {
+    function cleanup() {
+      const spans = document.querySelectorAll('span');
+      spans.forEach(span => {
+        const text = span.textContent.trim();
+        // Remove spans with reading time
+        if (text.includes('min read')) {
+          span.remove();
+        }
+        // Remove orphaned bullet/separator spans
+        if (text === '·' || text === '•') {
+          span.remove();
+        }
+      });
+      
+      // Also hide the entire metadata container if it's empty
+      const metaContainers = document.querySelectorAll('[class*="mb-16"]');
+      metaContainers.forEach(container => {
+        if (container.textContent.trim() === '' || container.children.length === 0) {
+          container.style.display = 'none';
+        }
+      });
+    }
+    
+    // Run when DOM is ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', cleanup);
+    } else {
+      cleanup();
+    }
+    
+    // Also observe for dynamic content
+    const observer = new MutationObserver(cleanup);
+    observer.observe(document.body, { childList: true, subtree: true });
+  })();
+</script>
+{{- end -}}
+

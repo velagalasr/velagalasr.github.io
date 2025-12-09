@@ -16,3 +16,92 @@
   display: none !important;
 }
 
+/* Hide social sharing icons and share buttons */
+[class*="social"],
+[class*="share"],
+.share-buttons,
+.social-share,
+.social-links {
+  display: none !important;
+}
+
+/* Hide the social share section with flex layout */
+section.flex.flex-row.flex-wrap.justify-center {
+  display: none !important;
+}
+
+/* Hide the metadata container if it's between header and content */
+.mt-4.mb-16 {
+  display: none !important;
+}
+
+/* Remove/reduce spacing between header and content - smaller top margin */
+main.w-full.min-w-0.max-w-6xl {
+  padding-top: 0.5rem !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Hide spacer div */
+.mt-16 {
+  display: none !important;
+}
+
+/* Reduce prose default margins */
+.prose {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Reduce gaps in main article */
+article.w-full {
+  gap: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Remove padding from container */
+.container.mx-auto {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Hide the navigation arrows and prev/next links section */
+.pt-1.no-prose.w-full {
+  display: none !important;
+}
+
+/* Center the image */
+.prose img {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 120% !important;
+  max-width: 120% !important;
+  position: relative !important;
+  left: 0% !important;
+}
+
+/* Center prose content */
+.prose {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: none !important;
+}
+
+/* Remove max-width constraint on container */
+.container {
+  max-width: none !important;
+  width: 100% !important;
+}
+
+/* Ensure main content spans full width */
+main {
+  width: 120% !important;
+  max-width: 120% !important;
+  
+}
+
+

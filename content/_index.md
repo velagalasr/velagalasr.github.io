@@ -7,7 +7,7 @@ type: landing
 design:
   # Default section spacing
   spacing: '2rem'
-
+hide_reading_time: true
 sections:
   - block: resume-biography-3
     content:
