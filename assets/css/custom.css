@@ -161,4 +161,187 @@ article .flex.pt-12.pb-4 {
   display: none !important;
 }
 
+/* Remove top padding from projects page sections */
+#section-markdown-1 {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+.hbb-section {
+  padding-top: 0 !important;
+}
+
+/* Project card styles for expandable view */
+.project-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+  min-height: 320px;
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Two-column layout for cards with children */
+.card-layout.has-children {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0;
+  height: 100%;
+  min-height: 320px;
+}
+
+.card-main {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  overflow: visible;
+}
+
+.card-sidebar {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.card-thumb {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+  background: transparent;
+  border-radius: 8px;
+}
+
+.card-header {
+  text-align: center;
+  width: 100%;
+  overflow: visible;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  color: #1a1a1a;
+}
+
+.card-summary {
+  color: #666;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.card-children {
+  margin: 0;
+  flex: 1;
+}
+
+.card-toggle {
+  cursor: pointer;
+  padding: 0 0 0.75rem;
+  font-weight: 600;
+  color: white;
+  user-select: none;
+  list-style: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.card-toggle::-webkit-details-marker {
+  display: none;
+}
+
+.card-toggle::before {
+  content: "▼ ";
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+details:not([open]) .card-toggle::before {
+  transform: rotate(-90deg);
+}
+
+.project-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project-list li {
+  margin: 0.75rem 0;
+}
+
+.project-link {
+  display: block;
+  padding: 0.75rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.15s;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.project-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateX(4px);
+}
+
+.project-link strong {
+  color: white;
+  font-weight: 600;
+  display: block;
+  font-size: 1rem;
+}
+
+.project-desc {
+  display: block;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 0.35rem;
+  line-height: 1.4;
+}
+
+/* For leaf project cards without children - make entire card clickable */
+.card-link-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .card-layout.has-children {
+    grid-template-columns: 1fr;
+  }
+  
+  .card-thumb {
+    height: 140px;
+  }
+  
+  .card-sidebar {
+    border-left: none;
+    border-top: 1px solid #e5e7eb;
+  }
+}
+
+
 

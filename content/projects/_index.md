@@ -5,23 +5,12 @@ type: landing
 hide_reading_time: true
 
 design:
-  # Section spacing
-  spacing: '5rem'
+  spacing: '0rem'
 
-# Page sections
 sections:
-  - block: collection
+  - block: markdown
     content:
-      title:
-      text: 
-      filters:
-        folders:
-          - projects
-    design:
-      view: article-grid
-      fill_image: false
-      columns: 3
-      show_date: false
-      show_read_time: false
-      show_read_more: false
+      title: ''
+      text: |
+        {{< projects-grid >}}
 ---

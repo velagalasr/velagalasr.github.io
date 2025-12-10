@@ -1,0 +1,45 @@
+<div class="project-card" data-project="{{ .RelPermalink }}">
+  <article class="card">
+    {{/* Two-column layout: left side for image/header, right side for expandable list */}}
+    <div class="card-layout {{ if gt (len .Pages) 0 }}has-children{{ end }}">
+      
+      <div class="card-main">
+        <header class="card-header">
+          {{ if .Params.featured_image }}
+            {{ $imagePath := .Params.featured_image }}
+            {{ $pageDir := path.Dir .File.Path }}
+            {{ $fullPath := printf "%s/%s" $pageDir $imagePath }}
+            <img src="{{ $fullPath | relURL }}" alt="{{ .Title }}" class="card-thumb" />
+          {{ end }}
+          <h3 class="card-title">{{ .Title }}</h3>
+          {{ with .Params.summary }}
+            <p class="card-summary">{{ . }}</p>
+          {{ end }}
+        </header>
+      </div>
+
+      {{/* If this page has children (subprojects), show expandable list on the right */}}
+      {{ if gt (len .Pages) 0 }}
+        <div class="card-sidebar">
+          <details class="card-children" open>
+            <summary class="card-toggle">View {{ len .Pages }} project{{ if gt (len .Pages) 1 }}s{{ end }}</summary>
+            <ul class="project-list">
+              {{ range .Pages.ByWeight }}
+                <li>
+                  <a href="{{ .RelPermalink }}" class="project-link">
+                    <strong>{{ .Title }}</strong>
+                    {{ with .Params.summary }} <span class="project-desc">{{ . }}</span> {{ end }}
+                  </a>
+                </li>
+              {{ end }}
+            </ul>
+          </details>
+        </div>
+      {{ else }}
+        {{/* For leaf pages (no children), make the entire card clickable */}}
+        <a href="{{ .RelPermalink }}" class="card-link-overlay" aria-label="View {{ .Title }}"></a>
+      {{ end }}
+      
+    </div>
+  </article>
+</div>
