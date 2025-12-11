@@ -1,5 +1,5 @@
 ---
-title: Fine-tuned SLM
+title: Failure Claims Assessment
 type: project
 draft: false
 featured_image: ""
@@ -14,16 +14,13 @@ show_comments: false
 hide_image: true
 ---
 
-# Fine-tuned Small Language Model
+An AI-powered web application that analyzes equipment failure claims and generates detailed assessments using a fine-tuned GPT-2 Large language model. Built with Python and Streamlit, the system leverages PEFT (Parameter-Efficient Fine-Tuning) with LoRA adapters to provide intelligent claim analysis while maintaining a small model footprint (~10-20MB adapters). The model was trained on 3,000 synthetic claims covering various equipment types, failure modes, and scenarios. Deployed on Hugging Face Spaces with Docker, demonstrating end-to-end ML workflow from data generation and model training to production deployment. Technologies: Python, Transformers, PEFT/LoRA, Streamlit, Docker, Git LFS, Hugging Face Spaces.
 
-A specialized Small Language Model (SLM) fine-tuned for domain-specific tasks.
-
-## Interactive Demo
-
+## Demo 
+https://velagalasr-failure-claims-assessment.hf.space
 <iframe
-	src="http://192.168.1.221:8501/"
+	src="https://velagalasr-failure-claims-assessment.hf.space"
 	frameborder="0"
-	width="100%"
-	height="800"
-	style="border: 1px solid #e5e7eb; border-radius: 8px;"
+	width="950"
+	height="850"
 ></iframe>

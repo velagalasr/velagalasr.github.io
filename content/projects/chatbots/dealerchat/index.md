@@ -31,6 +31,8 @@ Security: Malicious query detection, risk scoring
 
 Web UI: Gradio interface for easy interaction
 
+## Demo 
+https://velagalasr-dealer-bot.hf.space
 <iframe
 	src="https://velagalasr-dealer-bot.hf.space"
 	frameborder="0"
